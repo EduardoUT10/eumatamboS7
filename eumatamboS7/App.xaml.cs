@@ -4,13 +4,15 @@ using Xamarin.Forms.Xaml;
 
 namespace eumatamboS7
 {
+    
     public partial class App : Application
     {
+        public static MasterDetailPage MasterPage { get; set; }
         public App()
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new NavigationPage(new MainPage());
         }
 
         protected override void OnStart()

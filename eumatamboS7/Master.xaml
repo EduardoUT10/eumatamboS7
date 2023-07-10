@@ -1,12 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="eumatamboS7.Master">
+             x:Class="eumatamboS7.Master"
+             Title = "Menu">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Label Text="Opciones" FontSize="18" />
+            <Button x:Name="btnInicio" Text="Inicio"  Clicked="btnInicio_Clicked" Background="beige" ImageSource="menu.png"/>
+            <Button x:Name="btnAcerca" Text="Inicio"  Clicked="btnAcerca_Clicked" Background="Beige"  ImageSource="acerca.png"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

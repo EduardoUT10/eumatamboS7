@@ -16,5 +16,15 @@ namespace eumatamboS7
         {
             InitializeComponent();
         }
+
+        private void btnInicio_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAcerca_Clicked(object sender, EventArgs e)
+        {
+
+        }
     }
 }

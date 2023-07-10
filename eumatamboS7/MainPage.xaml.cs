@@ -8,11 +8,14 @@ using Xamarin.Forms;
 
 namespace eumatamboS7
 {
-    public partial class MainPage : ContentPage
+    public partial class MainPage : MasterDetailPage
     {
         public MainPage()
         {
             InitializeComponent();
+            this.Master = new Master();
+            this.Detail = new NavigationPage(new Detail());
+            App.MasterPage = this;
         }
     }
 }
